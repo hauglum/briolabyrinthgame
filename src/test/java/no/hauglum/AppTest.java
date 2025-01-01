@@ -1,4 +1,4 @@
-package org.example;
+package no.hauglum;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

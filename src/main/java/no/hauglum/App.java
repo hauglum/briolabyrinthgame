@@ -1,4 +1,4 @@
-package org.example;
+package no.hauglum;
 
 import com.yoctopuce.YoctoAPI.*;
 
