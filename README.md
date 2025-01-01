@@ -1,2 +1,2 @@
 # briolabyrinthgame
-A console app controlling the phusical Brio Labyrinth Game wih use of Yocto-Servo from Yoctopuce
+This console application enables users to control the physical Brio Labyrinth game by interfacing with Yocto-Servo modules from Yoctopuce, offering a unique blend of programming and mechanical interaction.
