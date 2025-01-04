@@ -25,7 +25,13 @@ public class App
 
         while (running) {
             displayMenu();
-            char choice = scanner.nextLine().toUpperCase().charAt(0);
+
+            char choice;
+            if(scanner.hasNext()) {
+                choice = scanner.nextLine().toUpperCase().charAt(0);
+            }else {
+                choice = 'Q';
+            }
 
             switch (choice) {
                 case '1':
@@ -44,6 +50,7 @@ public class App
                 default:
                     System.out.println("Invalid option. Please try again.");
             }
+
         }
 
         scanner.close();
@@ -76,12 +83,12 @@ public class App
     }
 
     private static void optionTwo() {
-        System.out.println("You selected Option Two.");
-        // Add functionality for Option Two here
+        BrioAutoRunner r = new BrioAutoRunner();
+        r.run();
     }
 
     private static void optionThree() {
-        System.out.println("You selected Option Three.");
-        // Add functionality for Option Three here
+        BrioManualRunner r = new BrioManualRunner();
+        r.run();
     }
 }
